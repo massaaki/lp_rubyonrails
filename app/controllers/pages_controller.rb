@@ -19,11 +19,11 @@ class PagesController < ApplicationController
 
 				#Check if member exists update them
 				if gibbon.lists('3e6b528408').members(member_id).retrieve 
-					gibbon.lists("3e6b528408").members(member_id).update(body: {email_address: contact.email, status: "subscribed",interests: {"58431551ed": true} })
+					gibbon.lists("3e6b528408").members(member_id).update(body: {email_address: contact.email, status: "subscribed",interests: {"5e4894f7a1": true} })
 				end
 
 			rescue
-				gibbon.lists("3e6b528408").members.create(body: {email_address: contact.email, status: "subscribed", interests: {"b1cf04f75a": true, "58431551ed": true} })
+				gibbon.lists("3e6b528408").members.create(body: {email_address: contact.email, status: "subscribed", interests: {"b1cf04f75a": true, "5e4894f7a1": true} })
 			end
 			# WelcomeLandingRegistration.delay.welcome(contact.email)
 			flash[:message] = 'Parabéns! Prepare-se para o dia 14/Nov, alguns dias antes enviaremos o seu acesso para o e-mail cadastrado'
@@ -34,3 +34,7 @@ class PagesController < ApplicationController
 
   end
 end
+
+
+#5af1c8164db61db38fc3ad324d4bb542-us14
+gibbon.lists("3e6b528408").members(member_id).update(body: {email_address: "mauricio.massaaki@gmail.com", status: "subscribed",interests: {"58431551ed": true} })
