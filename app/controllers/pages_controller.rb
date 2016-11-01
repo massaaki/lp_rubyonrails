@@ -23,7 +23,7 @@ class PagesController < ApplicationController
 				end
 
 			rescue
-				gibbon.lists("3e6b528408").members.create(body: {email_address: contact.email, status: "subscribed", interests: {"b1cf04f75a": true, "5e4894f7a1": true} })
+				gibbon.lists("3e6b528408").members.create(body: {email_address: contact.email, status: "subscribed", interests: {"b1cf04f75a": true,"78a68d6bef": true, "5e4894f7a1": true} })
 			end
 			# WelcomeLandingRegistration.delay.welcome(contact.email)
 			flash[:message] = 'Parabéns! Prepare-se para o dia 14/Nov, alguns dias antes enviaremos o seu acesso para o e-mail cadastrado'
