@@ -4,6 +4,7 @@
     background-size: cover;
     height: 100vh;
     padding-top: 5%;
+    min-height: 667px;
     font-family: 'Lucida Grande';
     color: #F2F2F2;
     text-transform: uppercase;
@@ -18,9 +19,11 @@
       padding-top: 120px;
       padding-bottom: 120px;
       .header-image{
+        @media(max-width: 500px){float: inherit ; text-align: center;}
         float: left;
       }
       .header-text{
+        @media(max-width: 500px){float:inherit ; text-align: center; }
         float: left;
         color: #fff;
         margin-left: 10px;
