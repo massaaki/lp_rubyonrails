@@ -35,6 +35,3 @@ class PagesController < ApplicationController
   end
 end
 
-
-#5af1c8164db61db38fc3ad324d4bb542-us14
-gibbon.lists("3e6b528408").members(member_id).update(body: {email_address: "mauricio.massaaki@gmail.com", status: "subscribed",interests: {"58431551ed": true} })
