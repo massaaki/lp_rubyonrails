@@ -1,0 +1,150 @@
+<div id="landing">
+	<header class="header-landing">
+		<div class="text-center logo_livein">
+			<%= image_tag "landing/logo_liveinacademy.png"%>
+		</div>	
+		<div class="mask">
+			<div class="container">
+				<div class="row">
+					<div class="header-image">
+						<%=image_tag "landing/logo_rails.png"%>
+					</div>
+					<div class="header-text">
+						<div class="title">Ruby on Rails</div>
+						<div class="subtitle">Basic to Pro</div>
+						<div class="promotion">100% Grátis</div>
+					</div> <!--header-text -->
+				</div> <!-- row -->
+			</div> <!-- container -->
+		</div> <!-- mask -->
+	</header>
+
+
+
+	<section class="section01-first_course">
+		<div class="title">Primeiro Curso</div>
+		<div class="subtitle">Completo de <span class="hightlight">Ruby on Rails</span></div>
+		<div class="promotion">100% Grátis</div>
+
+		<div class="description">
+			Estamos criando um curso GRATUITO com vagas extremamente LIMITADAS, com exemplos práticos que vão te transformar um verdadeiro programador
+		</div>
+		<div class="container">
+			<div class='row'>
+				<%= render 'email' %>
+			</div>
+		</div>
+
+	</section> <!-- first_course -->
+
+
+	<section class="section02-why_learn">
+		<div class="container"> 
+			<div class="row">
+				<div class="title">Por que aprender</div>
+				<div class="subtitle">Ruby on Rails?</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 item"> 
+					<%= image_tag "landing/icon_flexibility.png" %>
+					<div class="text">
+						<div class="item-title">Flexibilidade</div>
+						<div class="item-subtitle">
+							O Rails Possui Grande Quantidade de Código Pronto, isso não te deixa preso na implementação do básico
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 item"> 
+					<%= image_tag "landing/icon_agility.png" %> 
+					<div class="text">
+						<div class="item-title">Agilidade</div>
+						<div class="item-subtitle">
+							O Rails possui uma estrutura incrivel para que você consiga implementar sistemas extremamente grandes de forma simples
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 item"> 
+					<%= image_tag "landing/icon_learn.png" %>
+					<div class="text">
+						<div class="item-title">Aprendizado</div>
+						<div class="item-subtitle">
+							O Rails é a linguagem de programação mais divertida para se aprender
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> <!-- why_learn  -->
+
+
+	<section class="section3-structure">
+		<div class="container">
+			<div class="row">
+				<div class="section-title">Estrutura do Curso</div>
+				<div class="section-subtitle">LiveIn Academy</div>
+			</div>
+			<div class="row">
+				<%= render "item_structure", locals: { number: 1, 
+													   title: 'Conceitos Básicos', 
+													   description: 'Estrutura Básica e Desenvolvimento dos primeiros programas', 
+													   item01: 'Programacao Ruby', 
+													   item02: 'Estrutura do Rails', 
+													   item03: 'Banco de Dados', 
+													   item04: 'Projeto 01 - Todo list', 
+													   item05: 'Enviar para a Produção'} %>
+
+				<%= render "item_structure", locals: { number: 2, 
+													   title: 'Utilização de Gems', 
+													   description: 'Utilize codigo validado para voce focar na qualidade do site', 
+													   item01: 'Bootstrap', 
+													   item02: 'Font Awesome', 
+													   item03: 'CSS', 
+													   item04: 'Upload', 
+													   item05: 'Versionamento'} %>
+
+				<%= render "item_structure", locals: { number: 3, 
+													   title: 'Conceitos Avançados', 
+													   description: 'Trabalhando com banco de dados de forma mais complexa', 
+													   item01: 'Ligação de Tabelas', 
+													   item02: 'Sistema Responsivo', 
+													   item03: 'Javascript Ajax', 
+													   item04: 'Projeto 02 - Tabelas', 
+													   item05: 'Projeto 03 - Animações '} %>
+
+				<%= render "item_structure", locals: { number: 4, 
+													   title: 'STARTUP', 
+													   description: 'Colocando em prática como uma Startup', 
+													   item01: 'Blog', 
+													   item02: 'Landign Page Simples', 
+													   item03: 'Landing Page(Sendgrid)', 
+													   item04: 'Landing Page(Mailchimp)', 
+													   item05: 'Rede Social'} %>
+			</div> <!-- Row-->
+		</div> <!-- Container-->
+	</section> <!-- Structure -->
+
+	<section class="section4-email">
+		<div class="title">Aliás, essa pagina foi feita em Ruby, no final do curso você poderá criar uma também</div>
+		<div class="description">Cadastre-se, o acesso será enviado no dia 14/nov, mas temos vagas extremamente limitadas para conseguirmos acompanhar os alunos</div>
+
+		<div class="container">
+			<div class='row'>
+				<%= render 'email' %>
+			</div>
+		</div>
+	</section>
+
+	<section class="section5-divisor">
+		
+	</section>
+
+
+	<footer class="landing-footer">
+		<div class="container">
+			<div class="row">LiveIN Academy  © 2016</div>
+		</div>
+	</footer>
+
+
+</div> <!--END - Landing -->

@@ -1,0 +1,13 @@
+<%= form_tag 'pages/landing', remote: true, id: 'landing-email' do %>
+	<% if !flash[:message] || flash[:message] == 'Formato Invalido'  %>
+			<div class="col-md-4 col-md-offset-4">
+			<%= text_field_tag :email, "", class: 'form-control', placeholder: 'Insira o seu e-mail',:required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}'  %>
+
+
+			<%= submit_tag "Solicitar Acesso", class: 'btn btn-block btn-access',:onClick => 'javascript:update_email_field();'%>
+			</div>
+		
+	<%else%>
+		<p class="message-sended"> <%= flash[:message]%></p>
+	<%end%>
+<%end%>
