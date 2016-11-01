@@ -1,6 +1,6 @@
 #landing {
   .header-landing {
-    background-image: url("landing/header_bg.png");
+    background-image: image-url("landing/header_bg.png");
     background-size: cover;
     height: 100vh;
     padding-top: 5%;
@@ -79,7 +79,7 @@
   
   
   .section02-why_learn {
-    background-image: url("landing/section_advantage_bg.png");
+    background-image: image-url("landing/section_advantage_bg.png");
     background-size: cover;
     padding-top: 45px;
     padding-bottom: 45px;
@@ -114,7 +114,7 @@
   }//section02-why_learn
   
   .section3-structure {
-    background-image: url("landing/section_structure_bg.png");
+    background-image: image-url("landing/section_structure_bg.png");
     background-size: cover;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -183,7 +183,7 @@
     }
   }//section4-email
   .section5-divisor {
-    background-image: url("landing/section_last_bg.png");
+    background-image: image-url("landing/section_last_bg.png");
     background-size: cover;
     background-position: center center;
     height: 180px;
