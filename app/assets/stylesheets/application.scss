@@ -21,10 +21,25 @@
  @import "bootstrap";
 
 
- 
+
 .btn-access {
   background-color: #212020;
   margin-top: 10px;
   margin-bottom: 45px;
   color: #6A6969;
+}
+
+
+
+
+#session {
+    background-image: image-url("landing/header_bg.png");
+    background-size: cover;
+    height: 100vh;
+    padding-top: 5%;
+    min-height: 667px;
+    font-family: 'Lucida Grande';
+  a{
+    background-color: transparent;
+  }
 }

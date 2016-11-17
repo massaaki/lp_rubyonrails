@@ -42,6 +42,20 @@
           font-size: 18px;
           color: #C1C1C1;
           line-height: 1.4;
+          margin-top: 10px;
+          .btn-enter {
+            background-color: #9E2D31;
+            transition: all 0.3s;
+            &:hover {
+              background-color: #842226;
+            }
+          }
+          a {
+            margin-right: 5px;
+             color: #ffffff;
+            
+             border: 0px;
+          }
         }
         
       }//header-text

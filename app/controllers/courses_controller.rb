@@ -1,9 +1,21 @@
 class CoursesController < ApplicationController
+
+  #======================================================
+  # Load Informations
+  #======================================================
   before_action :set_course, only: [:show, :edit, :update, :destroy]
   
-  before_action :check_current_user
-  before_action :check_admin, only: [:edit, :update, :destroy]
 
+  #======================================================
+  # Dependences to access This page
+  #======================================================
+  before_action :check_current_user
+  before_action :check_admin, only: [:new, :edit, :update, :destroy]
+
+
+  #======================================================
+  # Actions
+  #======================================================
   def index
     @courses = Course.all
   end
@@ -60,13 +72,13 @@ class CoursesController < ApplicationController
     end
 
     def course_params
-      params.require(:course).permit(:title, :description, :photo)
+      params.require(:course).permit(:name, :description, :photo)
     end
 
     def check_admin
       if current_user
         if !current_user.admin
-          redirect_to root_path
+          redirect_to courses_path
         end
       end
     end
